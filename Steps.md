@@ -112,6 +112,7 @@ python upload_image_to_s3.py
 Press SPACEBAR to capture the photo.
 
 Confirm the photo is uploaded by checking your S3 bucket.
+```
 
 Task 4: Launch SageMaker Notebook Instance and Open JupyterLab
 
@@ -261,8 +262,4 @@ Integrated S3, Rekognition, and SageMaker to create a smooth, serverless AI pipe
 End Lab: Sign out of AWS and click End Lab on your Whizlabs dashboard.
 
 
----
 
-If you want, I can also **add a Table of Contents with clickable links** at the top to make this Markdown lab even easier to navigate. It will make your documentation look very professional.  
-
-Do you want me to do that?
