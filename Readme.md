@@ -1,26 +1,149 @@
-#Lab Details
+# 😊 Smile Detection from Webcam Images using Amazon Rekognition & SageMaker
 
-This hands-on lab helps you build a real-time smile and emotion detection system using Amazon Rekognition, integrated within a Jupyter Notebook hosted on Amazon SageMaker. 
-You’ll capture a live webcam image using Python, upload it to Amazon S3, and analyze it using Rekognition's face detection API. The results, smile status and emotions, which are displayed with annotated images and confidence scores. This beginner-friendly lab showcases how to build a serverless AI workflow using AWS services without training any custom models.
+**Level:** Intermediate  
+**Duration:** 45 Minutes  
+**AWS Region:** US East (N. Virginia) – `us-east-1`
 
-Duration: 45 Minutes
-AWS Region: US East (N. Virginia) us-east-1
+## 🛠 Services Used
 
-##Introduction
+- Amazon EC2  
+- Amazon S3  
+- Amazon Rekognition  
+- Amazon SageMaker  
+- Amazon Web Services (AWS)  
+- Generative AI Concepts  
 
-Amazon Rekognition
-Amazon Rekognition is a deep learning–based image and video analysis service by AWS. It allows you to quickly detect faces, emotions, objects, and more ~ without needing to build or train machine learning models.
-In this lab, Rekognition is used to detect human faces in a webcam image, identify whether a person is smiling, and determine dominant facial emotions such as Happy, Sad, Angry, Calm, etc.
-Amazon S3 (Simple Storage Service)
-Amazon S3 is a secure, scalable object storage service used to store and retrieve files (called objects). It acts as a cloud-based storage layer between your local application and AWS services.
-In this project, S3 is used to store the webcam image captured from the user’s system using Python and OpenCV.
-The image is uploaded to a dedicated S3 bucket, from where Amazon Rekognition directly accesses it for face and emotion analysis.
-Amazon SageMaker
-Amazon SageMaker is a fully managed cloud service that provides tools to build, train, and deploy machine learning models at scale.
-Although this lab doesn’t involve model training, SageMaker is used to host a Jupyter Notebook instance where we:
-Write and run the image processing and analysis code
-Download images from S3
-Use Rekognition to analyze them
-Display annotated results using libraries like Pillow and Matplotlib
-SageMaker serves as a centralized, cloud-native environment to experiment with AI workflows without local setup.
-Architecture Diagram
+---
+
+# 📌 Lab Details
+
+This hands-on lab guides you through building a **real-time smile and emotion detection system** using **Amazon Rekognition**, integrated within a **Jupyter Notebook hosted on Amazon SageMaker**.
+
+In this lab, you will:
+
+1. Capture a live webcam image using Python.
+2. Upload the captured image to Amazon S3.
+3. Analyze the image using Amazon Rekognition’s Face Detection API.
+4. Display smile status and detected emotions with confidence scores.
+5. Annotate the image with bounding boxes and results.
+
+This beginner-friendly lab demonstrates how to build a **serverless AI workflow using AWS services** — without training any custom machine learning models.
+
+---
+
+# 🚀 Introduction
+
+## 🔎 Amazon Rekognition
+
+Amazon Rekognition is a deep learning–based image and video analysis service by AWS. It enables developers to detect:
+
+- Faces  
+- Facial emotions  
+- Smile detection  
+- Objects  
+- Text in images  
+- Unsafe content  
+
+— all **without building or training custom ML models**.
+
+### In This Lab
+
+Rekognition is used to:
+
+- Detect human faces in a webcam image  
+- Determine whether the person is smiling  
+- Identify dominant facial emotions such as:
+  - Happy  
+  - Sad  
+  - Angry  
+  - Calm  
+  - Surprised  
+  - Confused  
+
+Each detection includes a **confidence score**, indicating prediction accuracy.
+
+---
+
+## 🗂 Amazon S3 (Simple Storage Service)
+
+Amazon S3 is a secure, scalable object storage service used to store and retrieve files (objects).
+
+### Role in This Project
+
+- Stores the webcam image captured using Python and OpenCV  
+- Acts as the storage layer between your local application and AWS services  
+- Allows Amazon Rekognition to directly access the uploaded image  
+
+Workflow:
+1. Capture image locally  
+2. Upload to S3 bucket  
+3. Rekognition analyzes image from S3  
+
+---
+
+## 🧠 Amazon SageMaker
+
+Amazon SageMaker is a fully managed machine learning service that provides tools to build, train, and deploy ML models at scale.
+
+### How SageMaker Is Used in This Lab
+
+Although no model training occurs in this lab, SageMaker provides:
+
+- A hosted **Jupyter Notebook environment**
+- Cloud-based execution of Python code
+- Integration with AWS services
+
+Inside SageMaker, you will:
+
+- Write image capture and processing code  
+- Upload images to S3  
+- Call the Rekognition API  
+- Display annotated results using:
+  - Pillow (PIL)
+  - Matplotlib  
+
+SageMaker acts as a **centralized cloud-native AI development environment** without requiring local ML setup.
+
+---
+
+# 🏗 Architecture Overview
+
+### Step-by-Step Workflow
+
+1. 📷 Capture webcam image using Python (OpenCV)
+2. ☁ Upload image to Amazon S3
+3. 🤖 Amazon Rekognition analyzes the image
+4. 📊 Results returned with:
+   - Smile status
+   - Emotions
+   - Confidence scores
+5. 🖼 Annotated image displayed in SageMaker Notebook
+
+   
+![Architecture Diagram](architecture-diagram.png)
+---
+
+# 🎯 Learning Outcomes
+
+By completing this lab, you will:
+
+- Understand how to use pre-trained AI services in AWS
+- Build a serverless computer vision workflow
+- Integrate S3, Rekognition, and SageMaker
+- Work with AWS SDK (boto3) in Python
+- Visualize AI predictions with bounding boxes and labels
+
+---
+
+# 💡 Key Takeaway
+
+This lab demonstrates how powerful AWS AI services are — allowing you to implement advanced facial analysis without training or managing infrastructure.
+
+You focus on the application logic.  
+AWS handles the deep learning models behind the scenes.
+
+---
+
+## 📌 End Result
+
+A real-time smile and emotion detection system powered entirely by managed AWS services.
