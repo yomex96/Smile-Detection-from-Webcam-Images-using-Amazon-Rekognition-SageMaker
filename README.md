@@ -107,6 +107,8 @@ Inside SageMaker, you will:
 
 SageMaker acts as a **centralized cloud-native AI development environment** without requiring local ML setup.
 
+![Architecture Diagram](jupyternotebook.png)
+
 ---
 
 # 🏗 Architecture Overview
@@ -136,6 +138,11 @@ By completing this lab, you will:
 - Work with AWS SDK (boto3) in Python
 - Visualize AI predictions with bounding boxes and labels
 
+![Architecture Diagram](image_Rekognition.png)
+
+
+
+
 ---
 
 # 💡 Key Takeaway
@@ -144,6 +151,11 @@ This lab demonstrates how powerful AWS AI services are — allowing you to imple
 
 You focus on the application logic.  
 AWS handles the deep learning models behind the scenes.
+
+   
+![Architecture Diagram](smile_detection.png)
+
+
 
 ---
 
