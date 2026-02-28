@@ -1,7 +1,6 @@
 # 😊 Smile Detection from Webcam Images using Amazon Rekognition & SageMaker
 
-**Level:** Intermediate  
-**Duration:** 45 Minutes  
+  
 **AWS Region:** US East (N. Virginia) – `us-east-1`
 
 ## 🛠 Services Used
@@ -14,6 +13,10 @@
 - Generative AI Concepts  
 
 ---
+
+google collab link :
+
+https://colab.research.google.com/drive/1Tzew7_1m8i36FxgFHco1NJXiRtVstvPI?usp=sharing
 
 # 📌 Lab Details
 
