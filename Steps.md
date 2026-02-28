@@ -113,8 +113,8 @@ Press SPACEBAR to capture the photo.
 
 Confirm the photo is uploaded by checking your S3 bucket.
 ```
-
-Task 4: Launch SageMaker Notebook Instance and Open JupyterLab
+---
+## Task 4: Launch SageMaker Notebook Instance and Open JupyterLab
 
 Open Amazon SageMaker AI Console.
 
@@ -136,7 +136,8 @@ Click New → conda_python3.
 
 Rename the notebook to smile_detection_lab.ipynb.
 
-Task 5: Install Dependencies & Download Image from S3 in SageMaker
+---
+## Task 5: Install Dependencies & Download Image from S3 in SageMaker
 1. Install Required Python Packages
 !pip install boto3 pillow matplotlib --quiet
 2. Download Image from S3
@@ -223,7 +224,9 @@ plt.imshow(image)
 plt.axis('off')
 plt.title("Smile Detection Output")
 plt.show()
-Task 6: Final Output - Smile Detection Result
+
+---
+## Task 6: Final Output - Smile Detection Result
 
 The notebook displays:
 
@@ -237,7 +240,9 @@ Green labels:
 
 Labels are based on the Smile field returned by Amazon Rekognition.
 
-Task 7: Validation Test
+--
+
+## Task 7: Validation Test
 
 Click the Validation button in the right-side panel to check if you completed the lab successfully.
 
